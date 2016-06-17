@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sieve.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="http://zeptojs.com/zepto.min.js">
+
+    </script>
+    <title>筛子游戏</title>
+  </head>
+  <body>
+    <div class="tab con" style="display:block">
+      <div class="">
+        <p class="btn" onclick="clcikNext($(this))">
+          创建房间
+        </p>
+      </div>
+    </div>
+    <div class="tab2 con">
+      <div class="roomchos">
+          选择人数：<input type="text" value=""/><br><br>
+          房 间 名：<input type="text" value=""/><br><br>
+          <p class="" onclick="clcikNext($(this))">
+            确认
+          </p>
+      </div>
+    </div>
+    <div class="tab3 con">
+      <div class="roomchos">
+          选择人数：<input type="text" value=""/><br><br>
+          房 间 名：<select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select><br><br>
+          <p class="" onclick="clcikNext($(this))">
+            确认
+          </p>
+      </div>
+    </div>
+    <div class="tab4 con">
+        <ul class="roomchos">
+          <li>玩家1</li>
+          <li>玩家2</li>
+          <li>玩家3</li>
+          <li>玩家4</li>
+        </ul>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function clcikNext(obj){
+        obj.parent().parent().hide();
+        obj.parent().parent().next().show();
+    }
+  </script>
+</html>
